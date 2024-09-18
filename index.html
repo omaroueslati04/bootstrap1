@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        /* Change the text color of the navigation links */
+        .nav-link {
+          color: rgb(11, 143, 196); /* Change this to any color you like */
+        }
+    
+        /* Optional: Change the text color when hovering over the links */
+        .nav-link:hover {
+          color: rgb(255, 255, 255); /* Optional hover color */
+        }
+        #nameag{
+          color: white;
+          position: relative;
+          top: 10px ;
+        }
+        main{
+           background-image: url(714283.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 200vh;
+            }
+       .debut{
+        display: flex;
+        flex-direction: column;
+        flex-wrap:wrap;
+        align-items: center;
+        position: relative;
+        top: 100px;
+        }
+        .destinations{
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+        }  
+        .container{
+          position: relative;
+          top: 50px;
+        } 
+        .accordion-item{
+          background-color: rgb(238, 27, 24);
+        }
+        form{
+          display: grid;
+          grid-template-columns: repeat(4,auto);
+        }
+        #CONTACT>div{
+        display: inline-block;
+        margin-left: 120px;
+    }
+    #CONTACT{
+        background-color: rgb(41, 148, 157);
+    }
+     
+        
+    
+
+      </style>
+</head>
+<body>
+    <header>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="https://img.freepik.com/vecteurs-libre/logo-voyage-detaille_23-2148616611.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1726531200&semt=ais_hybrid" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+              </a>
+              <div id="nameag"><p>GlobeTrek Adventures</p></div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">destination</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">tours</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " aria-disabled="true">contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+         </nav>
+    </header>
+    <main>
+        <div class="debut">
+          <h1 id="titre1" style="font-family: Arial, sans-serif; font-size: 36px; font-style: italic ; color: rgb(255, 255, 255);">your journey begins with us </h1>
+          <h2>Discover the world with us—your journey to unforgettable adventures starts here!</h2>
+          <div class="btn btn-outline-light">click here</div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="destinations">
+          <div class="card" style="width: 300px;;">
+            <img src="360_F_265237090_Muthvb72m2POYFjyx7F5UCQLh9JdBtKN.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">tokyo</h5>
+              <p class="card-text"></p>
+              <a href="#" class="btn btn-danger">learn more</a>
+            </div>
+          </div>
+          <div class="card" style="width: 300px;;">
+            <img src="tour-eiffel-de-paris-et-rivière-la-seine-au-coucher-du-soleil-à-france-107376702.webp" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">france</h5>
+              <p class="card-text"></p>
+              <a href="#" class="btn btn-danger">learn more</a>
+            </div>
+          </div>
+          <div class="card" style="width: 300px;;">
+            <img src="shutterstock_1656628171v2-2107x1406.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">spain</h5>
+              <p class="card-text"></p>
+              <a href="#" class="btn btn-danger">learn more</a>
+            </div>
+          </div>
+
+
+        </div>
+      <br>
+      <br>
+      <div class="conatainer2">
+        <form>
+          <div>
+            <label>Name:</label>
+            <input id="name" type="text" placeholder="enter your name!"></div>
+
+          <div>
+            <label>Birth Date:</label>
+            <input type="date" id="birthday" /></div>
+          
+          <div>
+            <label>Password:</label>
+            <input type="password" id="password" /></div>
+          
+          <div> 
+            <label> phone number:</label>
+            <input type="number" id="number" value="+216"></div>
+          </form>
+        <a href="#" class="btn btn-danger">submit</a>
+      </div>
+      <div class="container">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                tour package #1
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is our magestic tokyo tour package.</strong> Immerse yourself in the vibrant energy of Tokyo with our 5-day tour package. Explore iconic landmarks like the serene Meiji Shrine, bustling Shibuya Crossing, and the ancient Senso-ji Temple. Experience world-class shopping in Ginza, savor authentic Japanese cuisine, and enjoy panoramic views from Tokyo Tower 
+              <a href="#">more details</a>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                tour package #2
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is our magestic sapin tour package.</strong> Immerse yourself in the vibrant energy of Tokyo with our 5-day tour package. Explore iconic landmarks like the serene Meiji Shrine, bustling Shibuya Crossing, and the ancient Senso-ji Temple. Experience world-class shopping in Ginza, savor authentic Japanese cuisine, and enjoy panoramic views from Tokyo Tower 
+              <a href="#">more details</a>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                tour package #3
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is our magestic france tour package.</strong> Immerse yourself in the vibrant energy of Tokyo with our 5-day tour package. Explore iconic landmarks like the serene Meiji Shrine, bustling Shibuya Crossing, and the ancient Senso-ji Temple. Experience world-class shopping in Ginza, savor authentic Japanese cuisine, and enjoy panoramic views from Tokyo Tower 
+              <a href="#">more details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <section id="CONTACT">
+        <div>
+        <a href="https://www.traveltodo.com/">contact us via official web site</a>
+        </div>
+        <div>
+        <p><b>mail</b>:transportfree@gmail.com</p>
+        </div>
+        <div>
+        <p>phone number:+216 98455655</p>
+        </div>
+    </section>
+  
+
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
